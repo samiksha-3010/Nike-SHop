@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.login-container {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-top: 100px;
+}
+
+h2 {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.btn{
+      background-color: black;
+      border: 1px solid black;
+      height: 40px;
+      color: white;
+      width: 30%;
+      border-radius: 20px;
+      margin-top: 45px;
+      margin-left: 70%;
+}
+.logo-nike{
+    height: 70px;
+    width: 40%;
+    display: flex;
+    justify-content: space-around; 
+
+}
+.logo-nike>img{
+      width: 40%;
+      height: 30px;
+}
+        
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Enter your email to join us or sign in.</h2>
+        <p>India</p>
+        <div class="logo-nike">
+            <img src="https://media.gettyimages.com/id/52216922/photo/denver-the-air-jordan-logo-at-the-air-jordan-xx-launch-party-at-rise-nightclub-on-february-18.jpg?s=612x612&w=0&k=20&c=zyOv0_CphYjRs-Zl1P3Cmj_FZJfCa30OdhhAUBFrB2g="/>
+            <img src="https://media.gettyimages.com/id/1601191745/photo/london-england-a-nike-logo-is-seen-prior-to-the-pre-season-friendly-match-between-tottenham.jpg?s=612x612&w=0&k=20&c=g6nXOIa0tvCkAebZVsZYqWDefJrYq-JD7Y4uBv9VybQ="/>
+
+
+        </div>
+        <form action="process-login.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+            <button class="btn">Countinuie</button>
+            <p style="color: red;">By continuing, I agree to Nike’s <u>Privacy Policy</u> and Terms of Use.</p>
+        </form>
+    </div>
+    
+    
+</body>
+</html>

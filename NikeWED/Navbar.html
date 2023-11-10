@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/d4fa596027.js" crossorigin="anonymous"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -47,6 +49,7 @@
             background-color: inherit;
             font-family: inherit;
             margin: 0;
+            color: black;
         }
 
         .navbar a, .dropdown:hover .dropbtn {
@@ -54,6 +57,7 @@
         }
 
         .dropdown-content {
+            
             display: none;
             position: absolute;
             background-color: #f9f9f9;
@@ -79,7 +83,7 @@
             display: block;
         }
         .second-navbar{
-            background-color:#ffffff;
+            background-color:#333333;
             overflow: hidden;
             display: flex;
             border: 1px solid black;
@@ -93,6 +97,7 @@
         .nike-logo{
             width: 10%;
             border: 1px solid black;
+           
             
         }
         .nike-logo>img{
@@ -105,15 +110,38 @@
             color: black;
         }
         .nike-text{
-            width: 40%;
+            width: 50%;
             display: flex;
             justify-content: space-around;
             border: 1px solid black;
             align-items: center; 
+           
         }
         .nike-icon{
-            width: 30%;
-            border: 1px solid black;  
+            width: 20%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-around;  
+        }
+        .button{
+        width: 50%;
+        border: 1px solid black;
+        height: 23px;        border-radius: 10px;
+        margin-top: 18px;
+        border: none;
+        
+        }
+        .button:hover{
+            background-color: #f5f5f5
+        }
+        .wish{
+            width: 13%;
+            border-radius: 30px;
+           text-align: center;
+
+        }
+        .wish:hover{
+            background-color:#f5f5f5;
         }
 
     </style>
@@ -140,18 +168,80 @@
 <div class="second-navbar">
       <div class="nike-logo"><img src="https://tse1.mm.bing.net/th?id=OIP.nQtLnLq6UianZ1ew4umTZwHaHa&pid=Api&rs=1&c=1&qlt=95&w=94&h=94"/></div>
       <div class="nike-text">
-                  <a>Mens</a>
-                  <a>Womens</a>
-                  <a>Kids</a>
-                  <a>New Featured</a>
-                  <a>Sell</a>
+        <div class="dropdown">
+            <button class="dropbtn">Men
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#service1">Order Status</a>
+                <a href="#service2">Privacy Policy</a>
+                <a href="#service3">Return us</a>
+                <a href="#service3">Contact Us</a>
+            </div>
+        </div>
        
+
+        <div class="dropdown">
+            <button  class="dropbtn">Women
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#service1">Order Status</a>
+                <a href="#service2">Privacy Policy</a>
+                <a href="#service3">Return us</a>
+                <a href="#service3">Contact Us</a>
+            </div>
+        </div>
+
+
+        <div class="dropdown">
+            <button class="dropbtn">Kids
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#service1">Order Status</a>
+                <a href="#service2">Privacy Policy</a>
+                <a href="#service3">Return us</a>
+                <a href="#service3">Contact Us</a>
+            </div>
+        </div>
+
+
+        <div class="dropdown">
+            <button class="dropbtn">Sale
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#service1">Order Status</a>
+                <a href="#service2">Privacy Policy</a>
+                <a href="#service3">Return us</a>
+                <a href="#service3">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">
+               
+                New & Featured
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#service1">Order Status</a>
+                <a href="#service2">Privacy Policy</a>
+                <a href="#service3">Return us</a>
+                <a href="#service3">Contact Us</a>
+            </div>
+        </div>
             
 
 
 
       </div>
-      <div class="nike-icon"></div>
+      <div class="nike-icon">
+        <input   class="button" type="Search"  />
+        <p class="wish"><i class="fa-solid fa-bag-shopping fa-xl"></i></p>
+        <p class="wish"><i class="fa-regular fa-heart fa-xl"></i></p>
+      </div>
        
 </div>
 
