@@ -4,8 +4,367 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Home</title>
+      <style>
+            *{
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 0;
+            }
+        .container{
+            width: 100%;
+            border: 1px solid black;
+
+        } 
+
+        @media screen and (max-width : 650px) {
+            .container{
+    border: 5px solid green;
+    flex-direction: column;
+}
+        }
+        .text-first{
+            width: 100%;
+            /* border: 1px solid black;  */
+            height: 60px;
+            background: #f6f6f6;
+         text-align: center;
+        }
+        .text-first>h4>u{
+            color: blue;
+        }
+     
+        .image-first{
+            width: 100%;
+            /* border: 1px solid black; */
+            height: 700px;
+        
+        } 
+        .image-first>img{
+            width: 90%;
+            /* border: 1px solid black; */
+            height: 600px;
+            margin-left: 5%;
+        }
+       .second-container{
+            width: 100%;
+            /* border: 1px solid black; */
+            text-align: center;
+       }
+       .second-container>p{
+            font-size: 70px;
+           
+
+       }
+       .second-container>span{
+            font-size: 15px;
+          padding-bottom: 20%;
+       }
+       .first-buttotn{
+            width: 20%;
+            height: 60px;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+           margin-left: 40%;
+       }
+
+       .first-buttotn>button {
+            width: 40%;
+            height: 40px;
+            border-radius: 20px;
+            background-color: black;
+            color: white;    
+}
+button:hover{
+      background-color: white;
+}
+.third-container{
+      width: 100%;
+      /* border: 1px solid black; */
+     
+}
+.first-child{
+      width: 90%;
+      height: 40px;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 5%;
+      font-size: 25px;
+
+}
+.second-child{
+      width: 90%;
+      height: 400px;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 5%;
+      /* border: 4px solid red; */
+
+}
+.second-child>div{
+      width: 45%;
+      /* border: 1px solid red; */
+      height: 400px;
+}
+.second-child>div>img{
+      width: 100%;
+      /* border: 1px solid black; */
+      height: 400px;
+      
+}
+.first-child{
+      width: 90%;
+      height: 40px;
+      display: flex;
+      /* justify-content: space-between; */
+      margin-left: 5%;
+      font-size: 25px;
+      margin-top: 30px;
+
+}
+.second-child{
+      width: 90%;
+      height: 400px;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 5%;
+      /* border: 1px solid  black; */
+
+}
+.second-child>div{
+      width: 30%;
+      border: 1px solid black;
+      height: 350px;
+}
+.second-child>div>img{
+      width: 100%;
+      /* border: 1px solid black; */
+      height: 400px;
+      
+}
+.four-container{
+      width: 90%;
+      margin-left: 5%;
+      /* border: 1px solid red; */
+      height: 450px;
+      display: flex;
+      justify-content: space-around;
+}
+.four-container>div{
+      width: 50%;
+      /* border: 1px solid red; */
+      height: 450px;
+
+}
+.four-container>div>img{
+      width: 100%;
+      /* border: 1px solid red; */
+      height: 450px;  
+}
+.five-container{
+      width: 90%;
+      margin-left: 5%;
+      background-color: gray;
+      /* border: 1px solid red; */
+      height: 350px;
+      display: flex;
+      justify-content: space-around;
+}
+.five-container>div{
+      /* border: 1px solid black; */
+      width: 20%;
+      height: 350px;
+      background-color: gray;
+      
+      
+}
+.five-container>div>img{
+      width: 100%;
+      height: 350px;     
+}
+.six-container{
+      width: 90%;
+      height: 530px;
+      /* border: 1px solid black; */
+      margin-left: 5%;
+      display: flex;
+      justify-content: space-around;
+}
+.six-container>div{
+      width: 30%;
+      height: 400px;
+}
+.six-container>div>img{
+      width: 100%;
+      height: 400px;
+}
+.last-container{
+      width: 90%;
+      height: 400px; 
+      /* border: 1px solid black;  */
+      margin-left: 5%;
+      display: flex;
+      justify-content: space-around;
+
+}
+.last-container>div{
+      width: 20%;
+      /* border: 1px solid black; */
+      height: 300px;
+      margin-top: 5%;
+      text-align: center;
+}
+.last-container>div>p{
+      color: gray;
+}
+
+
+
+ 
+
+       
+
+      </style>
 </head>
 <body>
+      <div class="container">
+            <div class="text-first">
+               
+                  <h4>Hello Nike App <br/><u>Shop All Our New Markdowns</u></h4>
+                  <p></p>
+              
+            </div>
+            <div class="image-first">
+                  <img src="https://static.nike.com/a/images/w_1920,c_limit/17783f55-98a7-4483-b0eb-c3a44d2261b4/the-best-nike-shoes-for-kids.jpg"/>
+            </div>
+            <div class="second-container">
+                 <p><b>GIFTS THAT MOVE YOU </b></p>
+                 <span>This Year Gifts Next Year Gaurantess</span>
+                 <div class="first-buttotn">
+                  <button>Shop</button>
+                  <button>Explore</button>
+                 </div>
+
+            </div>
+            <div class="third-container">
+                  <div class="first-child">
+                        <b>Featured</b>
+                        <b>Shop</b>
+                  </div>
+                  <div class="second-child">
+                        <div class="image-inner">
+                              <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/43569d61-ece0-493b-9db4-d82c62ea6243/sb-skate-t-shirt-M961qd.png"/>
+                        </div>
+                        <div class="image-inner"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/442dc804-8c61-4a4d-99be-60b7f5e64dca/sportswear-long-sleeve-t-shirt-3R2Q2Q.png"/></div>
+                        <div class="image-inner"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0e5e85cc-1c7c-4002-a61a-93d7ab082a18/jordan-button-down-shirt-RdMB9d.png"/></div>                        
+
+                  </div>
+            </div>
+            <div class="first-child"> 
+                  <b>Most-Wanted Styles
+                  </b>
+                  <b>Accessories
+                  </b>
+                  <b>Matching Sets
+                  </b>
+            </div>
+            <h2>Trending</h2>
+            <div class="second-child">
+                  
+                  <div class="image-inner">
+                        <img src="https://static.nike.com/a/images/t_PDP_864_v1,f_auto,q_auto:eco/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d3123e79-53e5-4a03-aa5b-fbc5c18b9bfd/air-jordan-1-low-shoes-459b4T.png"/>
+
+                  </div>
+                  <div class="image-inner">
+                        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/da74291a-d1a1-47f4-859b-b8cb6e858b7c/jordan-sport-jam-warm-up-jacket-KJz9vF.png"/>
+
+                  </div>
+                  <div class="image-inner"><img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/68441ddc-28e1-4304-bb0a-5620a676fafa/dri-fit-tapered-fitness-trousers-96ThDh.png"/></div>
+
+            </div>
+            <h2>Dont'Miss</h2>
+            <div class="four-container">
+                  <div class="inner-image-second"><img src="https://static.nike.com/a/images/t_PDP_864_v1,f_auto,q_auto:eco/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/07f289b9-7ca1-49ec-a347-b69b95e17032/air-jordan-1-low-se-shoes-H7DD5v.png"/>
+                        <button  style="margin-bottom: 20%; border-radius: 20px; width: 20%; height: 40px; margin-left: 10%;">Shop</button>
+                  </div>
+                  <div class="inner-image-second"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/c82a6dd8-c9c3-413c-af3c-4d34c5c556d4/jordan-itage-suit-trousers-QZrkzL.png"/>
+                        <button style="margin-bottom: 20%; border-radius: 20px; width: 20%; height: 40px; ">Shop</button></div>
+
+            </div>
+            <h2>Always Iconic</h2>
+            <div class="five-container">
+                  <div class="inner-image-two"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e777c881-5b62-4250-92a6-362967f54cca/air-force-1-07-shoe-NMmm1B.png"/></div>
+                  <div class="inner-image-two"><img src="https://static.nike.com/a/images/t_PDP_864_v1,f_auto,q_auto:eco/b371e4dd-4c8d-4a2d-9ba0-268af8492b6f/sb-dunk-low-pro-skate-shoes-m1S1fz.png"/></div>
+                  <div class="inner-image-two"><img src="https://static.nike.com/a/images/t_PDP_864_v1,f_auto,q_auto:eco/b371e4dd-4c8d-4a2d-9ba0-268af8492b6f/sb-dunk-low-pro-skate-shoes-m1S1fz.png"/></div>
+                  <div class="inner-image-two"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/1bb96f3b-ea2b-422c-ab0d-49f06c3c54ef/air-force-1-gtx-shoes-l3ck9t.png"/></div>
+                  <div class="inner-image-two"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/df0dbd6e-9e27-4b46-b6b4-7c1c93ee1161/air-force-1-pltaform-shoes-pNLDVM.png"/></div>
+                
+
+            </div>
+            <p style="margin-left: 50%;">Air Jordan</p>
+            <h2>Shop by Sport</h2>
+            <div class="six-container">
+                  <div class="inner-image-four"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d15bcb39-c3e5-47d2-8d04-fe7f4fbb6b8d/dri-fit-adv-club-structured-swoosh-cap-6QGmcn.png"/>
+                        <h4>Nike Basketball</h4><br/> <b>  Styles made for your game.</b> <br/>  <u>Shop</u>
+                     
+                    
+                  </div>
+                  <div class="inner-image-four"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/1255e5fc-32cc-4e5f-aab7-9b4bbae8a15f/dri-fit-rise-structured-snapback-cap-3MFprM.png"/>
+                        <h4>Nike Basketball</h4><br/> <b>  Styles made for your game.</b> <br/>  <u>Shop</u>
+
+                  </div>
+ 
+                  <div class="inner-image-four"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2372799e-7c0c-4ae0-87e0-5c07f932cb27/dri-fit-club-unstructured-featherlight-cap-J9Hvf3.png"/>
+                        <h4>Nike Basketball</h4><br/> <b>  Styles made for your game.</b> <br/>  <u>Shop</u>
+
+                  </div>
+
+            </div>
+            <div class="last-container">
+                  <div class="last-areia"><b>Shoes</b><br/>
+                        <p>Air Force 1</p>
+                        <p>Huarache</p>
+                        <p>Air Max 90</p>
+                        <p>Air Max 95</p>
+                        <p>Air Max 270</p>
+                        
+
+                  </div>
+                  <div class="last-areia"><b>Icons</b>
+                  <br/>
+                  <p>  All Shoes</p>
+                  <p>Custom Shoes</p>
+                  <p>Jordan Shoes</p>
+                  <p>Running Shoes</p>
+                  <p>Basketball Shoes</p>
+                  <p>Football Shoes</p>
+                  <p>Gym & Training Shoes</p>
+                
+            </div>
+                  <div  class="last-areia"><b>Clothing</b>
+                  <p>  All Clothing</p>
+                  <p>Hoodies & Pullovers</p>
+                  <p>Modest Wear</p>
+                  <p>Shirts & Tops</p>
+                  <p>Compression & Nike Pro</p>
+                  <p>Trousers & Leggings</p>
+                  <p>Jackets</p>
+            
+                  </div>
+                  <div  class="last-areia"><b>Kids</b>
+                  <p> Infant & Toddler Shoes</p>
+                  <p>Kids' Shoes</p>
+                  <p>Kids' Jordan Shoes</p>
+                  <p>Kids' Basketball Shoes</p>
+                  <p>Kids' Backpacks
+                        </p>
+                  <p>Kids' Socks</p>
+                 
+            </div>
+            </div>
+      </div>
+    
       
 
 

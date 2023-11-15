@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <script src="https://kit.fontawesome.com/d4fa596027.js" crossorigin="anonymous"></script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Multiple page</title>
+      <style>
+            *{
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 0;
+            }
+      
+            @media screen and (max-width : 650px) {
+
+                 .main-container{
+    border: 5px solid green;
+    flex-direction: column;
+}
+            }
+            .navbar{
+                  width: 90%;
+                  margin-left: 5%;
+                  height: 50px;
+                  /* border: 1px solid black; */
+                  display: flex;
+                  justify-content: space-between;
+                  margin-top: 5%;
+            }
+            .navbar-text{
+                  width: 20%;
+                  /* border: 1px solid black; */
+            }
+            .navbar-icon{
+                  width: 20%;
+                  /* border: 1px solid black; */
+                  display: flex;
+                  justify-content: space-around;
+            }
+            .navbar-icon>div{
+                  width: 20%;
+                  /* border: 1px solid black; */
+                 text-align: center;
+            }
+            /* .dropdown-content { */
+/*             
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        } */
+.main-container{
+      width: 90%;
+      border: 1px solid black;
+      background-color: white;
+      display: flex;
+      justify-content: space-around;
+      margin-left: 5%;
+      margin-top: 5%;
+
+}
+.left-container{
+      width: 20%;
+      border: 1px solid black;
+}
+.left-container-first{
+      width: 90%;
+      border: 1px solid black;
+      margin-top: 5%;
+      text-align: center;
+
+}
+.left-container-second{
+      margin-top: 5%;
+      width: 90%;
+      margin-left: 5%;
+      height: 40px;
+      border-bottom: 1px solid gray;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+}
+.size{
+      width: 100%;
+      border: 1px solid black;
+      height: 150px;
+      display: flex;
+      justify-content: space-around;
+      gap: 1rem;
+      flex-wrap: wrap;
+      
+
+}
+.size>button{
+      height: 40px;
+      width: 23%;
+}
+.size>button:hover{
+      border: black;
+}
+.name-brand{
+      width: 100;
+      height: 50px;
+      display: flex;
+           /* border: 1px solid black; */   
+}
+
+.box{
+      width: 8%;
+      height: 20px;
+      border: 1px solid black;
+      border-radius: 5px;
+      margin-left: 5%;
+
+}
+
+.many-colour{
+      width: 100;
+      /* height: 200px; */
+      /* border: 1px solid black; */
+      display: flex;
+      justify-content: space-around;
+      
+    
+     
+}
+.cercle{
+      margin-top: 5%;
+      width: 15%;
+      /* border: 1px solid black; */
+      height: 40px;
+      border-radius: 20px;
+      background-color: red;
+}
+/* .cercle:hover{
+      border: black;
+} */
+
+.cercle-first{
+      margin-top: 5%;
+      width: 15%;
+      border: 1px solid black;
+      height: 40px;
+      border-radius: 20px;
+      background-color: yellow;
+}
+.cercle-sec{
+      margin-top: 5%;
+      width: 15%;
+      border: 1px solid black;
+      height: 40px;
+      border-radius: 20px;
+      background-color: black;
+}
+.cercle-third{
+      margin-top: 5%;
+      width: 15%;
+      border: 1px solid black;
+      height: 40px;
+      border-radius: 20px;
+      background-color: greenyellow;
+}
+.cercle-four{
+      margin-top: 5%;
+      width: 15%;
+      border: 1px solid black;
+      height: 40px;
+      border-radius: 20px;
+      background-color: pink;
+}
+/* .cercle-five{
+      margin-top: 5%;
+      width: 15%;
+      border: 1px solid pink;
+      height: 40px;
+      border-radius: 20px;
+      background-color: green;
+} */
+.text-five{ 
+      display: flex;
+      justify-content: space-around;
+
+}
+
+
+.right-container{
+      width: 70%;
+      border: 1px solid black;   
+}
+.first-image{
+      width: 100%;
+      border: 1px solid black;
+      height: 500px;
+      display: flex;
+      justify-content: space-around;
+
+}
+.first-image>div{
+      width: 30%;
+      border: 1px solid black;
+      background:#f6f6f6 ;
+      height: 350px;
+    
+
+}
+.first-image>div>img{
+      width: 100%;
+      height: 350px;
+      border: 1px solid black;
+     
+
+}
+
+      </style>
+</head>
+<body>
+      <div class="navbar">
+            <div class="navbar-text"><p>Babies & Toddlers (0–3 yrs) Kids Shoes(47)</p></div>
+            <div class="navbar-icon">
+                  <div><p>
+
+                        Hide Filters</p></div>
+                  <div><i class="fa-solid fa-arrow-down-z-a"></i></div>
+                  <div ><p>Sort By</p></div>
+                  <div class="dropdown-content"><i class="fa-solid fa-angle-down"></i>
+                        <!-- <a href="#service1">Feature</a>
+                        <a href="#service2">New</a>
+                        <a href="#service3">High Price</a>
+                        <a href="#service3">Low Price</a> -->
+                  </div>
+
+            </div>
+
+      </div>
+      <div class="main-container">
+            <div class="left-container">
+                  <div class="left-container-first">
+                   <p>  <b> Lifestyle</b></p><br/>
+                  <p> <b>  Jordan</b></p><br/>
+                    <b> <u>Sandals, Slides & Flip Flops</u></b>
+
+                  </div>
+                  <div class="left-container-second">
+                        <div class="left">
+                          <b>Kids</b>
+                        </div>
+                        <div class="right">
+                              <i class="fa-solid fa-angle-down"></i>
+                        </div>
+
+                  </div>
+
+                  <div class="left-container-second">
+                        <div class="left">
+                          <b>Kids  age (11)</b>
+                        </div>
+                        <div class="right">
+                              <i class="fa-solid fa-angle-down"></i>
+                        </div>
+
+                  </div>
+
+                  <div class="left-container-second">
+                        <div class="left">
+                          <b>Sale & Offers</b>
+                        </div>
+                        <div class="right">
+                              <i class="fa-solid fa-angle-down"></i>
+                        </div>
+
+                  </div>
+
+                  <div class="left-container-second">
+                        <div class="left">
+                          <b>Shop by Price</b>
+                        </div>
+                        <div class="right">
+                              <i class="fa-solid fa-angle-down"></i>
+                        </div>
+
+                  </div>
+                  <div class="left-container-second">
+                        <div class="left">
+                          <b>Colour</b>
+                        </div>
+                        <div class="right">
+                              <i class="fa-solid fa-angle-down"></i>
+                        </div>
+
+                  </div>
+
+                  <div class="left-container-second">
+                        <div class="left">
+                          <b>Brand</b>
+                        </div>
+                        <div class="right">
+                              <i class="fa-solid fa-angle-down"></i>
+                        </div>
+
+                  </div>
+
+                  <div class="left-container-second">
+                        <div class="left">
+                          <b>Icon</b>
+                        </div>
+                        <div class="right">
+                              <i class="fa-solid fa-angle-down"></i>
+                        </div>
+
+                  </div>
+
+                  <div class="left-container-second">
+                        <div class="left">
+                          <b>Show Height</b>
+                        </div>
+                        <div class="right">
+                              <i class="fa-solid fa-angle-down"></i>
+                        </div>
+
+                  </div>
+
+                  <div class="left-container-second">
+                        <div class="left">
+                          <b>Benfite</b>
+                        </div>
+                        <div class="right">
+                              <i class="fa-solid fa-angle-down"></i>
+                        </div>
+
+                  </div>
+
+                  <div class="left-container-second">
+                        <div class="left">
+                          <b>Width</b>
+                        </div>
+                        <div class="right">
+                              <i class="fa-solid fa-angle-down"></i>
+                        </div>
+
+                  </div>
+                  <div class="name-brand"> 
+                        <div class="box"></div>
+                        <div>Boys</div>
+                  </div>
+                  <div class="name-brand"> 
+                        <div class="box"></div>
+                        <div>Girl</div>
+                  </div>
+                  <div class="left-container-second">
+                        <div class="left">
+                          <b>Size</b>
+                        </div>
+                        <div class="right">
+                              <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                  
+                  </div>
+               <div class="size">
+                  <button>2.4</button>
+                  <button>3.5</button>
+                  <button>4.4</button>
+                  <button>8.2</button>
+                  <button>3.4</button>
+                  <button>1.4</button>
+                  <button>7.4</button>
+
+               </div>
+                  <div class="left-container-second">
+                        <div class="left">
+                          <b>Clousre Type</b>
+                        </div>
+                        <div class="right">
+                              <i class="fa-solid fa-angle-down"></i>
+                        </div>
+              
+
+                  </div>
+                  <div class="many-colour">
+                            
+
+                        <div  class="cercle"></div>
+                        <div class="cercle-first">
+
+                        </div>
+                        <div class="cercle-sec"></div>
+                        <div class="cercle-third"></div>
+                        <div class="cercle-four"></div>
+                        <!-- <div class="cercle-five"></div> -->
+            
+                  </div>
+                  <div class="text-five">
+                  <p>Red</p>
+                  <p>Yellow</p>
+                  <p>Pink</p>
+                  <p>Black</p>
+                  <p>Green</p>
+                  </div>
+            </div>
+            <div class="right-container">
+                  <div class="first-image">
+                        <div> <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/493ecb0b-2b1d-4933-acd5-695646de1009/court-borough-low-recraft-shoes-D0nqP8.png"/>
+                        <b>Nike Cortez Basic</b>
+                             <p> Baby/Toddler Shoes</p>
+                             <p>1 colour</p>
+                            <b>  MRP : ₹ 2 995.00</b>
+                        </div>
+                        <div> <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/32038e25-d625-46e0-9c07-38f50c6dabed/cortez-basic-shoes-cLQNtQ.png" />
+                              <b>Nike Cortez Basic</b>
+                              <p> Baby/Toddler Shoes</p>
+                              <p>1 colour</p>
+                             <b>  MRP : ₹ 2 995.00</b>
+                             
+                        </div>
+                        <div> <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/81d90f31-4afa-4297-a233-a9b95fa1641b/jordan-1-low-alt-se-shoes-9kDWTq.png"/>
+                              <b>Nike Cortez Basic</b>
+                              <p> Baby/Toddler Shoes</p>
+                              <p>1 colour</p>
+                             <b>  MRP : ₹ 2 995.00</b>
+                        </div>
+
+                        </div>
+                        <div class="first-image">
+                              <div> <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/379529dd-3c1c-451d-aba1-a579f3745251/sky-jordan-1-and-shoe-td3n17.png"/>
+                              <b>Nike Cortez Basic</b>
+                                   <p> Baby/Toddler Shoes</p>
+                                   <p>1 colour</p>
+                                  <b>  MRP : ₹ 2 995.00</b>
+                              </div>
+                              <div> <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/71b9a81d-abb7-4263-9930-83473ef7fbeb/air-max-1-easyon-shoes-K6x2mJ.png" />
+                                    <b>Nike Cortez Basic</b>
+                                    <p> Baby/Toddler Shoes</p>
+                                    <p>1 colour</p>
+                                   <b>  MRP : ₹ 2 995.00</b>
+                                   
+                              </div>
+                              <div> <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/77da5b51-029a-45d1-be84-b962347fb59d/jordan-23-7-shoes-VgL3Kq.png"/>
+                                    <b>Nike Cortez Basic</b>
+                                    <p> Baby/Toddler Shoes</p>
+                                    <p>1 colour</p>
+                                   <b>  MRP : ₹ 2 995.00</b>
+                              </div>
+      
+                           
+                                         
+      
+                              </div>
+
+                              <div class="first-image">
+                                    <div> <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3ed00b24-1591-4924-bd9d-1885ee0fc6f9/dunk-low-shoes-fhs947.png"/>
+                                    <b>Nike Cortez Basic</b>
+                                         <p> Baby/Toddler Shoes</p>
+                                         <p>1 colour</p>
+                                        <b>  MRP : ₹ 2 995.00</b>
+                                    </div>
+                                    <div> <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a2432279-f957-4401-abab-715714e9bb9a/kawa-slides-tCXlrc.png" />
+                                          <b>Nike Cortez Basic</b>
+                                          <p> Baby/Toddler Shoes</p>
+                                          <p>1 colour</p>
+                                         <b>  MRP : ₹ 2 995.00</b>
+                                         
+                                    </div>
+                                    <div> <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/c6524968-3bde-4670-83a1-230f7060f889/jordan-1-low-alt-shoes-jNQKZv.png"/>
+                                          <b>Nike Cortez Basic</b>
+                                          <p> Baby/Toddler Shoes</p>
+                                          <p>1 colour</p>
+                                         <b>  MRP : ₹ 2 995.00</b>
+                                    </div>
+            
+                                 
+                                               
+            
+                                    </div>
+                              </div>
+            
+                        </div>
+                        </div>
+                        
+      
+                  </div>
+
+                  
+                  </div>
+
+            </div>
+
+
+       
+      </div>
+      
+</body>
+</html>
