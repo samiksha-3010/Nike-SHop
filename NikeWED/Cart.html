@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <script src="https://kit.fontawesome.com/d4fa596027.js" crossorigin="anonymous"></script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Cart</title>
+      <style>
+            *{
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 0;
+            }
+            .main-container{
+                  border: 1px solid black;
+                  width: 80%;
+                  display: flex;
+                  justify-content: space-around;
+                  margin: auto;
+                  margin-top: 5%;
+            }
+            .left{
+                  border-bottom: 1px solid gray;
+                  width: 50%;
+                  height: 200px;
+                  display: flex;
+                  justify-content: space-around;
+
+            }
+            .left>p{
+                  font-size: 25px;
+            }
+            .left-first{
+                  /* border: 1px solid black; */
+                  height:160px ;
+                  margin-top: 10px;
+                  width: 23%;
+            }
+            .left-first>img{
+                  border: 1px solid black;
+                  height:100% ;
+                  width: 100%;  
+            }
+            .left-second{
+                  /* border: 1px solid black; */
+                  height:160px ;
+                  margin-top: 10px;
+                  width: 40%;
+            }
+            .left-second>p{
+                  color: gray;
+
+            }
+            .left-second-first{
+                  /* border: 1px solid black; */
+                  width: 100%;
+                  height: 30px;
+                  display: flex;
+                  margin-top: 10px;
+                  justify-content: space-around;
+            }
+            .left-second-second{
+                  /* border: 1px solid black; */
+                  width: 20%;
+                  height: 30px;
+                  display: flex;
+                  margin-top: 10px;
+                  margin-left: 5%;
+                 justify-content:space-around;
+            }
+            .left-third{
+                  /* border: 1px solid black; */
+                  height:160px ;
+                  margin-top: 10px;
+                  width: 23%;     
+            }
+            .left-third>p{
+                  margin-top: 50px;
+
+            }
+            .right{
+                  /* border: 1px solid black; */
+                  width: 30%;
+                  height: 50px;
+            }
+            .right-main{
+                  /* border: 1px solid red; */
+                  width: 100%;
+                  height: 200px;
+                  display: flex; 
+                  justify-content: space-around;  
+            }
+            .right-main-first{
+                  /* border: 1px solid black; */
+                  width: 90%;
+                  margin-left: 5%;
+                  height: 40px;     
+            }
+            .main-first{
+                  display: flex;
+                  justify-content: space-between;
+                  margin-top: 10px;
+                  border-bottom: 1px solid black;
+            }
+
+            .right>p{
+                  font-size: 25px;
+            }
+            .button{
+                  border: 1px solid black;
+                  height: 60px;
+                  margin-top: 10px;
+                  width: 70%;
+                  border-radius: 50px;
+                  background-color: black;
+                  color: white;
+            }
+            .meddle{
+                  /* border: 1px solid black; */
+                  width: 50%;
+                  margin-left: 10%;
+                  margin-top: 50px;
+
+            }
+            .last-image{
+                  width: 30%;
+                  margin-left: 10%;
+                  margin-top: 50px;
+                  height: 500px; 
+                  /* border: 1px solid black; */
+
+
+            }
+              .last-image>img{
+                  height: 400px;
+                  width: 100%;
+              }
+
+
+
+      </style>
+</head>
+<body>
+      <div class="main-container">
+            <p>Bag</p>
+            <div class="left">
+                  <div class="left-first">
+                        <img src="https://secure-images.nike.com/is/image/DotCom/FB8896_300?align=0,1&cropN=0,0,0,0&resMode=sharp&bgc=f5f5f5&wid=150&fmt=jpg"/>
+                  </div>
+                  <div class="left-second">
+                        <b>Nike Dunk Low Retro Premium</b>
+                        <p>Deep Jungle/Light Silver/Deep Jungle/White</p>
+                        <p>Men's Shoes</p>
+                        <div class="left-second-first">
+                              <p>Size 8</p>
+                              <i class="fa-solid fa-angle-down"></i>
+                              <p>Qunininty 1</p>
+                              <i class="fa-solid fa-angle-down"></i>
+                        </div>
+
+                        <div class="left-second-second">
+                              <i class="fa-regular fa-heart"></i>
+                              <i class="fa-solid fa-trash-can"></i>
+
+                        </div>
+
+                  </div>
+                  <div class="left-third">
+                        <p>MRP: Original price₹ 9 695.00</p>
+                  </div>
+                  
+            </div>
+            <div class="right">
+                  <p>Summary</p>
+                  <div class="right-main">
+                        <div class="right-main-first">
+                             <div class="main-first">
+                              <p>Subtotal</p>
+                              <p>₹ 9 695.00</p>
+                             </div>
+
+                             <div class="main-first">
+                              <p>Estimated Delivery & Handling</p>
+                              <p>₹ 1 250.00</p>
+                             </div>
+
+                             <div class="main-first">
+                              <p>Total</p>
+                              <p>₹ 10 945.00</p>
+                             </div>
+                        </div>
+                  </div>
+                 <button class="button">Guest Checkout</button><br/>
+                 <button class="button">Member Checkout</button>
+               
+            </div>   
+
+      </div>
+      <div class="meddle">   
+            <b>Want to view your favourites?</b><br/>
+            <u>Join us or Sign in</u><br/>
+                        <p> Favourites</p>
+                      </div>
+
+                      <div class="meddle"><b style="font-size: 28px;">You Might Also Like</b></div>
+                      <div class="last-image">
+                        <img src="https://static.nike.com/a/images/t_PDP_864_v1,f_auto,q_auto:eco/a2432279-f957-4401-abab-715714e9bb9a/kawa-slides-tCXlrc.png"/>
+                        <b>Nike Kawa</b>
+<p style="color: gray;">Baby & Toddler Slides</p>
+<b>MRP: ₹1,395.00</b>
+
+
+
+                      </div>
+      
+      
+</body>
+</html>
